@@ -11,5 +11,5 @@ sum = sum + rem;
 num = num / 10;
 }
 System.out.print("Sum of Digits of " + temp + " is " + sum);
-
 }
+
