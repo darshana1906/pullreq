@@ -1,15 +1,23 @@
-public class DigitsSum
+class PrimeNumbers 
 {
 public static void main(String[] args) 
 {
-int num=251025, rem = 0, sum = 0, temp;
-temp = num;
-while (num > 0)
+int limit = 100;
+System.out.println("Prime numbers between 1 and " + limit);
+for(int i=1; i < 100; i++)
 {
-rem = num % 10;
-sum = sum + rem;
-num = num / 10;
+boolean isPrime = true;
+for(int j=2; j < i ; j++)
+{
+if(i % j == 0)
+{
+isPrime = false;
+break;
 }
-System.out.println("Sum of Digits of " + temp + " is " + sum);
+}
+if(isPrime)
+System.out.print(i + " ");
+}
+}
 }
 
